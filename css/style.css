@@ -1,0 +1,231 @@
+body {
+    background-color: #011c2d;
+    color: #fff;
+    font-family: Roboto-Regular;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    justify-content: flex-end;
+    color: rgb(249, 249, 249);
+
+}
+
+header {
+    position: static;
+    z-index: 2;
+    top: -20;
+    /* left: 0;
+    right: 0;
+    animation: alternate-reverse; */
+}
+
+.image img {
+    width: 50%;
+    border-radius: 50%;
+    padding: -10px;
+}
+.menu-p  {
+    padding: 8px;
+    margin: 0;
+    color: #fff;
+    background-color: rgb(11, 11, 11);
+    /* background-size: 50px; */
+}
+header .li {
+    justify-content: space-between;
+    margin: 0 600px 0 0;
+    
+}
+.image {
+    background: url(../css/ChatGPT\ Image\ 8\ mai\ 2025\,\ 10_33_55.png )  no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    /* background: transparent; */
+    animation: cedric 15s infinite ;
+}
+
+.center {
+    padding: 70px;
+    color: #fff;
+    text-align: center;
+}
+.center h3 {
+    line-height: 40px;
+}
+
+.center button {
+    margin: 15px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px;
+    /* font-style: oblique; */
+}
+
+.center-competence {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    width: 50%;
+    gap: 50px;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.center-MesRéalisations {
+    text-align: center;
+    padding: 20px;
+}
+
+.projet  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin: 20px;
+    text-align: start;
+}
+
+.projet-center {
+    text-align: center;
+    padding: 10px;
+}
+
+.projet p {
+    padding: 20px;
+    margin: 20px;
+}   
+
+.button {
+    margin: 15px;
+    background-color: blue;
+    border-radius: 5px;
+    margin: 10Px;
+    padding: 7px;
+    /* font-style: oblique; */
+    text-align: center;
+    z-index: 2;
+}
+
+.button a {
+    color: #fff;
+}
+
+.envoyer  {
+
+    text-align: end;
+
+}
+
+.envoyer button {
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px;cursor: pointer;
+
+}
+
+.projet .Contact {
+    margin: 0 -100px;
+    padding: 10px;
+   
+}
+
+.container-center {
+    text-align: center;
+    padding: 70px;
+    
+}
+
+@keyframes cedric {
+    0%{
+        background: url(../prg.jpg) center no-repeat;
+        background-size:cover;
+    }
+    33%{
+        background: url(./loloo.jpg)  center no-repeat;
+        background-size:cover;
+    }
+    66%{
+        background: url(../ordinte.jpg) center no-repeat;
+        background-size:cover;
+    }
+}
+
+footer {
+    padding: 30px;
+    color: #fff;
+    background-color: black;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../Roboto-Regular.ttf);
+}
+
+.Réalisations {
+    margin: 10px;
+
+}
+
+.btn {
+    margin: 30px;
+}
+.nav {
+    /* list-style: none;
+    color: #fff; */
+    /* text-decoration: none; */
+}
+
+.button, .center button{
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .projet {
+        grid-template-columns: 1fr;   
+    }
+    .center, .container-center {
+        padding: 20px;
+    }
+
+
+    header ul {
+        flex-direction: column;
+    }
+
+    .image img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .center h3 {
+        font-size: 1.2rem;
+    }
+    .center .button, .button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+header a, .pub a {
+    text-decoration: none;
+    color: #fff;
+}
