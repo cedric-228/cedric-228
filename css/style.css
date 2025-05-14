@@ -9,23 +9,25 @@ body {
 
 }
 
-header ul {
+header ul, .nav{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 20px;
     justify-content: flex-end;
     color: rgb(249, 249, 249);
+    padding: 10px;
 
 }
 
 header {
-    position: static;
+    position: fixed;
     z-index: 2;
-    top: -20;
-    /* left: 0;
+    top: -20px;
+    left: 0;
     right: 0;
-    animation: alternate-reverse; */
+   animation: alternate-reverse;
+   
 }
 
 .image img {
@@ -42,7 +44,7 @@ header {
 }
 header .li {
     justify-content: space-between;
-    margin: 0 600px 0 0;
+    margin: 0 500px 0 0;
     
 }
 .image {
@@ -126,16 +128,23 @@ header .li {
 }
 
 .envoyer  {
-
-    text-align: end;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    gap: 40px;
+    margin: 40px;
+    margin-right: 60px;
 }
 
 .envoyer button {
     background-color: blue;
     color: #fff;
     border-radius: 5px;
-    padding: 4px;cursor: pointer;
+    padding: 4px;
+    cursor: pointer;
 
 }
 
@@ -188,6 +197,7 @@ footer {
     /* list-style: none;
     color: #fff; */
     /* text-decoration: none; */
+    /* padding: 30px; */
 }
 
 .button, .center button{
@@ -228,4 +238,15 @@ footer {
 header a, .pub a {
     text-decoration: none;
     color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: justify;
+}
+
+.logiciel {
+    margin-bottom:0px;
 }
